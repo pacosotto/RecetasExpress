@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  max-width: 1980px;
+  background: rgb(147, 147, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+}
+.main-container {
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.izq {
+  background: rebeccapurple;
+  width: 50%;
+  height: 95%;
+  margin: 10px;
+  border-radius: 10px;
+}
+.der {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  width: 50%;
+  height: 95%;
+  margin: 10px;
+  padding: 20px;
+}
+#btnDescargar {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#crear-recetas {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+  color: #fff;
+}
+.ingredientes-container {
+  background: #fff;
+  margin-top: 10px;
+  height: 200px;
+  overflow: scroll;
+  color: #000;
+}
+.ingredientes-container p {
+  color: #000;
+  padding: 10px;
+}
+.instrucciones-container {
+  margin-top: 10px;
+  background: #fff;
+  height: 200px;
+  overflow: scroll;
+  color: #000;
+}
+.instrucciones-container p {
+  padding: 10px;
+  color: black;
+}
+.error {
+  background: red;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+}

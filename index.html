@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RecetasExpress</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="izq">
+        <form id="crear-recetas">
+          <div class="input-container">
+            <label for="nombre">Nombre de la receta: </label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="input-container">
+            <label for="ingredientes">Ingresa los ingredientes: </label>
+            <input type="text" id="ingredientes" name="ingredientes" />
+            <button id="btnAgregarIngrediente" disabled>
+              Agregar ingrediente
+            </button>
+            <div class="ingredientes-container">
+              <p>Vista previa de Ingredientes:</p>
+              <ul id="lista-ingredientes"></ul>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="tiempo">Tiempo de realizacion(en minutos): </label>
+            <input type="number" name="tiempo" id="tiempo" min="1" max="300" />
+          </div>
+          <div class="input-container">
+            <label for="instrucciones">Instrucciones: </label>
+            <input type="text" name="instrucciones" id="instrucciones" />
+            <button id="btnAgregarInstruccion" disabled>Agregar paso</button>
+            <div class="instrucciones-container">
+              <p>Vista pervia de Instrucciones:</p>
+              <ol id="lista-instrucciones"></ol>
+            </div>
+          </div>
+
+          <button type="submit" id="enviar-receta" disabled>
+            Crear receta
+          </button>
+        </form>
+      </div>
+      <div class="der">
+        <p id="p-receta">Receta:</p>
+        <p id="p-ing">Ingredientes:</p>
+        <p id="p-tiempo">Tiempo de realización:</p>
+        <p id="p-instrucciones">Instrucciones:</p>
+        <button id="btnDescargar" disabled>Descargar receta</button>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
